@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/stopwatch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            app:srcCompat="@drawable/stopwatch" />
+
+        <ImageButton
+            android:id="@+id/graph"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            app:srcCompat="@drawable/graph" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:longClickable="false" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="START" />
+
+
+        <Button
+            android:id="@+id/finish_btn"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="Finish" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
